@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import classNames from 'classnames';
 import SwapIcon from 'src/icons/SwapIcon';
-import RepoLogo from 'src/icons/JupiterLogo';
-import DiscordIcon from 'src/icons/TwitterIcon';
+import JupiterLogo from 'src/icons/JupiterLogo';
+import TwitterIcon from 'src/icons/TwitterIcon';
 
 const HeaderLink = ({
   href,
