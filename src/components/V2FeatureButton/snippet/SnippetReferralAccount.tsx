@@ -9,7 +9,17 @@ import prettierPluginTypescript from 'prettier/plugins/typescript';
 
 const SnippetReferralAccount = () => {
   const [snippet, setSnippet] = useState(``);
-  const unformattedSnippet = ``;
+  const unformattedSnippet = `
+  const TEST_PLATFORM_FEE_AND_ACCOUNTS = {
+    referralAccount: new PublicKey('2PkXDceyjC53jQUw3eBV6GpDMrtoeJBo3HH5V8HJnAVH'),
+    feeBps: 100,
+  };
+  
+  window.Jupiter.init({
+    // ...
+    platformFeeAndAccounts: TEST_PLATFORM_FEE_AND_ACCOUNTS,
+  })
+`;
 
   useEffect(() => {
     prettier
@@ -24,9 +34,9 @@ const SnippetReferralAccount = () => {
 
   return (
     <div className='flex w-full justify-center text-left'>
-      
-  <iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=false&amount=1&amountFiat&backgroundColor=2B2B35&darkMode=true&from=sol&horizontal=false&isFiat=false&lang=en-US&link_id=b0d09e3f1142fa&locales=true&logo=false&primaryColor=9945FF&to=usdc&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe>
-    <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
+      <SyntaxHighlighter language="typescript" showLineNumbers style={vs2015}>
+        {snippet}
+      </SyntaxHighlighter>
     </div>
   );
 };
