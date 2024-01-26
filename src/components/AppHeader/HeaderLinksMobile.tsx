@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import DiscordIcon from 'src/icons/DiscordIcon';
-import RepoLogo from 'src/icons/RepoLogo';
+import DiscordIcon from 'src/icons/TwitterIcon';
+import RepoLogo from 'src/icons/JupiterLogo';
 import SwapIcon from 'src/icons/SwapIcon';
 
 const HeaderLink: React.FC<{
@@ -38,13 +38,13 @@ const HeaderLinksMobile: React.FC = () => {
         href="#"
         external
         label={'Link 1'}
-        icon={<RedoLogo width="20" height="20" />}
+        icon={<JupiterLogo width="20" height="20" />}
       />
       <HeaderLink
         href="#"
         external
         label={'Link 2'}
-        icon={<DiscordIcon width="20" height="20" />}
+        icon={<TwitterIcon width="20" height="20" />}
       />
     </div>
   );
