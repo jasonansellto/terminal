@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import DiscordIcon from 'src/icons/DiscordIcon';
-import RedoLogo from 'src/icons/RedoLogo';
+import RepoLogo from 'src/icons/RepoLogo';
 import SwapIcon from 'src/icons/SwapIcon';
 
 const HeaderLink: React.FC<{
@@ -33,17 +33,17 @@ const HeaderLink: React.FC<{
 const HeaderLinksMobile: React.FC = () => {
   return (
     <div className="px-5 py-4 text-base text-white space-y-2">
-      <HeaderLink href="/" label={'Terminal'} icon={<SwapIcon width="20" height="20" />} />
+      <HeaderLink href="/" label={'Demo'} icon={<SwapIcon width="20" height="20" />} />
       <HeaderLink
         href="#"
         external
-        label={'Link 1'}
-        icon={<RedoLogo width="20" height="20" />}
+        label={'Repo'}
+        icon={<RepoLogo width="20" height="20" />}
       />
       <HeaderLink
         href="#"
         external
-        label={'Link 2'}
+        label={'Discord'}
         icon={<DiscordIcon width="20" height="20" />}
       />
     </div>
