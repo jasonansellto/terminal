@@ -24,7 +24,7 @@ export const WalletModalButton: FC<{ setIsWalletModalOpen(toggle: boolean): void
         </span>
       ) : (
         <span>
-          <span>Connect Wallet</span>
+          <span>Connect</span>
         </span>
       )}
     </button>
