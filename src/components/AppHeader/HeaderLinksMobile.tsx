@@ -38,13 +38,13 @@ const HeaderLinksMobile: React.FC = () => {
         href="#"
         external
         label={'Link 1'}
-        icon={<RepoLogo width="20" height="20" />}
+        icon={<JupiterLogo width="20" height="20" />}
       />
       <HeaderLink
         href="#"
         external
         label={'Link 2'}
-        icon={<DiscordIcon width="20" height="20" />}
+        icon={<TwitterIcon width="20" height="20" />}
       />
     </div>
   );
