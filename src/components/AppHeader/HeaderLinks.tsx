@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import classNames from 'classnames';
 import SwapIcon from 'src/icons/SwapIcon';
-import JupiterLogo from 'src/icons/JupiterLogo';
-import TwitterIcon from 'src/icons/TwitterIcon';
+import RedoLogo from 'src/icons/RedoLogo';
+import DiscordIcon from 'src/icons/DiscordIcon';
 
 const HeaderLink = ({
   href,
@@ -52,21 +52,21 @@ const HeaderLinks = () => {
         isActive={false}
         external
         title={'Link 1'}
-        icon={<JupiterLogo width="20" height="20" />}
+        icon={<RedoLogo width="20" height="20" />}
       />
       <HeaderLink
         href="#"
         isActive={false}
         external
         title={'Link 2'}
-        icon={<JupiterLogo width="20" height="20" />}
+        icon={<RedoLogo width="20" height="20" />}
       />
       <HeaderLink
         href="#"
         isActive={false}
         external
         title={'Link 3'}
-        icon={<JupiterLogo width="20" height="20" />}
+        icon={<DiscordIcon width="20" height="20" />}
       />
     </div>
   );
