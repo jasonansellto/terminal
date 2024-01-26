@@ -27,17 +27,6 @@ const ModalTerminal = (props: {
     });
   };
 
-  // To make sure passthrough wallet are synced
-  useEffect(() => {
-    if (!window.Jupiter.syncProps) return;
-    window.Jupiter.syncProps({ passthroughWalletContextState });
-  }, [passthroughWalletContextState, props]);
-
-  return (
-    <div id="integrated-terminal"></div>
-  );
-};
-
 import { useWallet } from "@solana/wallet-adapter-react"; // Or @jup-ag/wallet-adapter;
 const passthroughWalletContextState = useWallet();
 
@@ -58,5 +47,10 @@ window.Jupiter.init({
   },
   enableWalletPassthrough: true,
 });
+
+  return (
+    <div id="integrated-terminal"></div>
+  );
+};
 
 export default ModalTerminal;
