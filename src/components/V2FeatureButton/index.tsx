@@ -117,7 +117,7 @@ const V2FeatureButton = () => {
               {open && containerDimensions.width > 0 ? (
                 <div ref={tweetContainerRef} className="flex justify-center w-full min-h-[500px] lg:min-h-[600px]">
                   <TwitterTweetEmbed
-                    tweetId={'1684583550174244864'}
+                    tweetId={'1746790806336278643'}
                     options={{
                       // the max embedded tweet can go is 550px
                       width: Math.min(550, containerDimensions.width),
