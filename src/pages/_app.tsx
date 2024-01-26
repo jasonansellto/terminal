@@ -117,7 +117,7 @@ export default function App({ Component, pageProps }: AppProps) {
               <div className="flex flex-col justify-center items-center text-center">
                 <div className="flex space-x-2">
                   <V2SexyChameleonText className="text-4xl md:text-[52px] font-semibold px-4 pb-2 md:px-0">
-                    VIP Exchange
+                    VIP Multi Exchange
                   </V2SexyChameleonText>
 
                   <div className="px-1 py-0.5 bg-v3-primary rounded-md ml-2.5 font-semibold flex text-xs self-start">
@@ -160,7 +160,7 @@ export default function App({ Component, pageProps }: AppProps) {
                         )}
                       >
                         <div className="flex items-center text-md text-white">
-                          {tab === 'modal' ? <V2SexyChameleonText>Modal</V2SexyChameleonText> : 'Modal'}
+                          {tab === 'modal' ? <V2SexyChameleonText>Multibridge</V2SexyChameleonText> : 'Modal'}
                         </div>
 
                         {tab === 'modal' ? (
@@ -181,7 +181,7 @@ export default function App({ Component, pageProps }: AppProps) {
                         )}
                       >
                         <div className="flex items-center text-md text-white">
-                          {tab === 'integrated' ? <V2SexyChameleonText>Integrated</V2SexyChameleonText> : 'Integrated'}
+                          {tab === 'integrated' ? <V2SexyChameleonText>Solana Swap</V2SexyChameleonText> : 'Integrated'}
                         </div>
                         {tab === 'integrated' ? (
                           <div className="absolute left-0 bottom-[-8px] w-full h-0.5 bg-gradient-to-r from-v3-primary to-[#00BEF0]" />
@@ -201,7 +201,7 @@ export default function App({ Component, pageProps }: AppProps) {
                         )}
                       >
                         <div className="flex items-center text-md text-white">
-                          {tab === 'widget' ? <V2SexyChameleonText>Widget</V2SexyChameleonText> : 'Widget'}
+                          {tab === 'widget' ? <V2SexyChameleonText>Trading Bot</V2SexyChameleonText> : 'Widget'}
                         </div>
 
                         {tab === 'widget' ? (
