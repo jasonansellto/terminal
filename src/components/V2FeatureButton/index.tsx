@@ -114,15 +114,26 @@ const V2FeatureButton = () => {
 
               <Title>Trade Solana with over 1500 other Crypto Currencies</Title>
 
-<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=false&amount=1&amountFiat&backgroundColor=2B2B35&darkMode=true&from=sol&horizontal=false&isFiat=false&lang=en-US&link_id=b0d09e3f1142fa&locales=true&logo=false&primaryColor=9945FF&to=bnbbsc&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe>
-    <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
               {open && containerDimensions.width > 0 ? (
                 <div ref={tweetContainerRef} className="flex justify-center w-full min-h-[500px] lg:min-h-[600px]">
+                  <TwitterTweetEmbed
+                    tweetId={'1684583550174244864'}
+                    options={{
+                      // the max embedded tweet can go is 550px
+                      width: Math.min(550, containerDimensions.width),
+                      height: 400,
+                      minWidth: containerDimensions.width,
+                      minHeight: 400,
+                    }}
+                  />
                 </div>
               ) : null}
 
               <div className="border-b border-white/10 w-full mt-4" />
 
+<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=false&amount=1&amountFiat&backgroundColor=2B2B35&darkMode=true&from=sol&horizontal=false&isFiat=false&lang=en-US&link_id=b0d09e3f1142fa&locales=true&logo=false&primaryColor=9945FF&to=bnbbsc&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe>
+    <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
+              
               <Title>Easier Referral Support</Title>
               <Desc>
                 With the new
