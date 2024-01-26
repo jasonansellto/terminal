@@ -58,7 +58,14 @@ const HeaderLinks = () => {
         href="#"
         isActive={false}
         external
-        title={'Locker'}
+        title={'Token Locker'}
+        icon={<RepoLogo width="20" height="20" />}
+      />
+      <HeaderLink
+        href="#"
+        isActive={false}
+        external
+        title={'Multichian Bridge'}
         icon={<RepoLogo width="20" height="20" />}
       />
       <HeaderLink
