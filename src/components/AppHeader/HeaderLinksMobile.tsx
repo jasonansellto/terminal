@@ -33,11 +33,11 @@ const HeaderLink: React.FC<{
 const HeaderLinksMobile: React.FC = () => {
   return (
     <div className="px-5 py-4 text-base text-white space-y-2">
-      <HeaderLink href="/" label={'Demo'} icon={<SwapIcon width="20" height="20" />} />
+      <HeaderLink href="/" label={'Aggregator'} icon={<SwapIcon width="20" height="20" />} />
       <HeaderLink
         href="#"
         external
-        label={'Repo'}
+        label={'Launchpad'}
         icon={<RepoLogo width="20" height="20" />}
       />
       <HeaderLink
