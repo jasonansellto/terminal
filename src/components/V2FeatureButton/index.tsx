@@ -85,7 +85,7 @@ const V2FeatureButton = () => {
         id={V2_FEATURE_BUTTON_ID}
         onClick={onEnter}
         className="mt-2 text-white text-sm font-semibold cursor-pointer border border-white/50 hover:bg-white/10 px-2 py-1 rounded-xl"
-      >{`What's new in V2 ✨`}</p>
+      >{`Multichain Bridge ✨`}</p>
 
       {open && (
         <div className="fixed w-screen min-h-screen left-0 top-0 z-[60] flex justify-center bg-black/50 text-white overflow-y-scroll">
@@ -104,7 +104,7 @@ const V2FeatureButton = () => {
             <div className="w-full flex flex-col items-center py-4 px-4 lg:py-8 lg:px-16">
               <div className="flex space-x-2">
                 <V2SexyChameleonText className="text-3xl lg:text-4xl md:text-[52px] font-semibold">
-                  Jupiter Terminal
+                  Get Money Terminal
                 </V2SexyChameleonText>
 
                 <div className="px-1 py-0.5 bg-v3-primary rounded-md ml-2.5 font-semibold flex text-xs self-start text-black">
