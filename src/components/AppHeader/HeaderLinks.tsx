@@ -52,21 +52,21 @@ const HeaderLinks = () => {
         isActive={false}
         external
         title={'Link 1'}
-        icon={<RepoLogo width="20" height="20" />}
+        icon={<JupiterLogo width="20" height="20" />}
       />
       <HeaderLink
         href="#"
         isActive={false}
         external
         title={'Link 2'}
-        icon={<RepoLogo width="20" height="20" />}
+        icon={<JupiterLogo width="20" height="20" />}
       />
       <HeaderLink
         href="#"
         isActive={false}
         external
         title={'Link 3'}
-        icon={<DiscordIcon width="20" height="20" />}
+        icon={<JupiterLogo width="20" height="20" />}
       />
     </div>
   );
