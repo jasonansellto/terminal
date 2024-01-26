@@ -69,9 +69,9 @@ export default function App({ Component, pageProps }: AppProps) {
               env: 'mainnet-beta',
               autoConnect: true,
               metadata: {
-                name: 'Jupiter Terminal',
+                name: 'Solana Widgets',
                 description: '',
-                url: 'https://terminal.jup.ag',
+                url: 'https://terminal-pearl.vercel.app/',
                 iconUrls: [''],
               },
               theme: 'jupiter',
@@ -86,25 +86,25 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title={'Jupiter Terminal'}
+        title={'Solana Terminal'}
         openGraph={{
           type: 'website',
           locale: 'en',
-          title: 'Jupiter Terminal',
-          description: 'Jupiter Terminal: An open-sourced, lite version of Jupiter that provides end-to-end swap flow.',
-          url: 'https://terminal.jup.ag/',
-          site_name: 'Jupiter Terminal',
+          title: 'Solana Terminal',
+          description: 'Solana Terminal: A solana aggregator running on Jupiter that provides end-to-end swap flow.',
+          url: 'https://terminal-pearl.vercel.app/',
+          site_name: 'Solana Terminal',
           images: [
             {
               url: `https://og.jup.ag/api/jupiter`,
-              alt: 'Jupiter Aggregator',
+              alt: 'Solana Aggregator',
             },
           ],
         }}
         twitter={{
           cardType: 'summary_large_image',
-          site: 'jup.ag',
-          handle: '@JupiterExchange',
+          site: 'terminal-pearl.vercel.app',
+          handle: '@JasonAnsellTO',
         }}
       />
 
@@ -117,7 +117,7 @@ export default function App({ Component, pageProps }: AppProps) {
               <div className="flex flex-col justify-center items-center text-center">
                 <div className="flex space-x-2">
                   <V2SexyChameleonText className="text-4xl md:text-[52px] font-semibold px-4 pb-2 md:px-0">
-                    VIP Multi Exchange
+                    Solana Terminal
                   </V2SexyChameleonText>
 
                   <div className="px-1 py-0.5 bg-v3-primary rounded-md ml-2.5 font-semibold flex text-xs self-start">
@@ -151,16 +151,16 @@ export default function App({ Component, pageProps }: AppProps) {
                     <div className="mt-4 flex justify-center ">
                       <button
                         onClick={() => {
-                          setTab('modal');
+                          setTab('Pop-up');
                         }}
                         type="button"
                         className={classNames(
                           '!bg-none relative px-4 justify-center',
-                          tab === 'modal' ? '' : 'opacity-20 hover:opacity-70',
+                          tab === 'Pop-up' ? '' : 'opacity-20 hover:opacity-70',
                         )}
                       >
                         <div className="flex items-center text-md text-white">
-                          {tab === 'modal' ? <V2SexyChameleonText>Multibridge</V2SexyChameleonText> : 'Modal'}
+                          {tab === 'Pop-up' ? <V2SexyChameleonText>Pop-up</V2SexyChameleonText> : 'Pop-up'}
                         </div>
 
                         {tab === 'modal' ? (
