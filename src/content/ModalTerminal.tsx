@@ -27,29 +27,20 @@ const ModalTerminal = (props: {
     });
   };
 
-import { useWallet } from "@solana/wallet-adapter-react"; // Or @jup-ag/wallet-adapter;
-const passthroughWalletContextState = useWallet();
-
-// To make sure passthrough wallet are synced
-useEffect(() => {
-  if (!window.Jupiter.syncProps) return;
-  window.Jupiter.syncProps({ passthroughWalletContextState });
-}, [passthroughWalletContextState.connected, props]);
-
-window.Jupiter.init({
-  displayMode: "integrated",
-  integratedTargetId: "integrated-terminal",
-  endpoint: "https://api.mainnet-beta.solana.com",
-  strictTokenList: false,
-  defaultExplorer: "Solscan",
-  formProps: {
-    initialAmount: "100000000",
-  },
-  enableWalletPassthrough: true,
-});
+  // To make sure passthrough wallet are synced
+  useEffect(() => {
+    if (!window.Jupiter.syncProps) return;
+    window.Jupiter.syncProps({ passthroughWalletContextState });
+  }, [passthroughWalletContextState, props]);
 
   return (
-    <div id="integrated-terminal"></div>
+    <div
+      className="p-4 hover:bg-white/10 rounded-xl cursor-pointer flex h-full w-full flex-col items-center justify-center text-white"
+      onClick={launchTerminal}
+    >
+      <WalletDisconnectedGraphic />
+      <span className="text-xs mt-4">Launch Terminal Modal</span>
+    </div>
   );
 };
 
