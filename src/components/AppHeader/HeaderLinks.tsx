@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import classNames from 'classnames';
 import SwapIcon from 'src/icons/SwapIcon';
-import RepoLogo from 'src/icons/RepoLogo';
-import DiscordIcon from 'src/icons/DiscordIcon';
+import RepoLogo from 'src/icons/JupiterLogo';
+import DiscordIcon from 'src/icons/TwitterIcon';
 
 const HeaderLink = ({
   href,
@@ -46,7 +46,7 @@ const HeaderLink = ({
 const HeaderLinks = () => {
   return (
     <div className="flex-1 justify-center hidden md:!flex text-sm h-full">
-      <HeaderLink href="/" isActive title={'Demo'} icon={<SwapIcon width="20" height="20" />} />
+      <HeaderLink href="/" isActive title={'Terminal'} icon={<SwapIcon width="20" height="20" />} />
       <HeaderLink
         href="#"
         isActive={false}
