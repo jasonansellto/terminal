@@ -34,7 +34,7 @@ const AppHeader: React.FC<{}> = () => {
           <Link href="https://jup.ag" shallow className="flex-1">
             <h1 className="flex items-center text-lg font-semibold text-white">
               <JupiterLogo />
-              <span className="ml-3">Jupiter</span>
+              <span className="ml-3">VIP Exchange</span>
             </h1>
           </Link>
         </div>
