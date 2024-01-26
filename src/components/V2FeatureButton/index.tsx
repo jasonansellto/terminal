@@ -104,28 +104,20 @@ const V2FeatureButton = () => {
             <div className="w-full flex flex-col items-center py-4 px-4 lg:py-8 lg:px-16">
               <div className="flex space-x-2">
                 <V2SexyChameleonText className="text-3xl lg:text-4xl md:text-[52px] font-semibold">
-                  Get Money Terminal
+                  Multichain Bridge
                 </V2SexyChameleonText>
 
                 <div className="px-1 py-0.5 bg-v3-primary rounded-md ml-2.5 font-semibold flex text-xs self-start text-black">
-                  v2
+                  v1
                 </div>
               </div>
 
-              <Title>Now with Jupiter V6 API, powered by The Metis Routing Algo</Title>
+              <Title>Trade Solana with over 1500 other Crypto Currencies</Title>
 
               {open && containerDimensions.width > 0 ? (
                 <div ref={tweetContainerRef} className="flex justify-center w-full min-h-[500px] lg:min-h-[600px]">
-                  <TwitterTweetEmbed
-                    tweetId={'1684583550174244864'}
-                    options={{
-                      // the max embedded tweet can go is 550px
-                      width: Math.min(550, containerDimensions.width),
-                      height: 400,
-                      minWidth: containerDimensions.width,
-                      minHeight: 400,
-                    }}
-                  />
+<iframe id='iframe-widget' src='https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=false&amount=1&amountFiat&backgroundColor=2B2B35&darkMode=true&from=sol&horizontal=false&isFiat=false&lang=en-US&link_id=b0d09e3f1142fa&locales=true&logo=false&primaryColor=9945FF&to=bnbbsc&toTheMoon=false' style="height: 356px; width: 100%; border: none"></iframe>
+    <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
                 </div>
               ) : null}
 
