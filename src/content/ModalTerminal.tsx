@@ -43,5 +43,30 @@ const ModalTerminal = (props: {
     </div>
   );
 };
+<!-- Attach the loading script in your <head /> -->
+<script src='https://terminal-pearl.vercel.app/main-v2.js' />
 
+<!-- Prepare a div in your <body> for Terminal to render -->
+<div id="integrated-terminal"></div>
+
+import { useWallet } from "@solana/wallet-adapter-react"; // Or @jup-ag/wallet-adapter;
+const passthroughWalletContextState = useWallet();
+
+// To make sure passthrough wallet are synced
+useEffect(() => {
+  if (!window.Jupiter.syncProps) return;
+  window.Jupiter.syncProps({ passthroughWalletContextState });
+}, [passthroughWalletContextState.connected, props]);
+
+window.Jupiter.init({
+  displayMode: "integrated",
+  integratedTargetId: "integrated-terminal",
+  endpoint: "https://api.mainnet-beta.solana.com",
+  strictTokenList: false,
+  defaultExplorer: "Solscan",
+  formProps: {
+    initialAmount: "100000000",
+  },
+  enableWalletPassthrough: true,
+});
 export default ModalTerminal;
