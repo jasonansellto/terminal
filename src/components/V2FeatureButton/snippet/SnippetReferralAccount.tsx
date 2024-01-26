@@ -11,7 +11,7 @@ const SnippetReferralAccount = () => {
   const [snippet, setSnippet] = useState(``);
   const unformattedSnippet = `
   const TEST_PLATFORM_FEE_AND_ACCOUNTS = {
-    referralAccount: new PublicKey('2XEYFwLBkLUxkQx5ZpFAAMzWhQxS4A9QzjhcPhUwhfwy'),
+    referralAccount: new PublicKey('2PkXDceyjC53jQUw3eBV6GpDMrtoeJBo3HH5V8HJnAVH'),
     feeBps: 100,
   };
   
