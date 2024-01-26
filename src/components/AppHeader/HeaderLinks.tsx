@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import classNames from 'classnames';
 import SwapIcon from 'src/icons/SwapIcon';
-import RedoLogo from 'src/icons/RedoLogo';
+import RepoLogo from 'src/icons/RepoLogo';
 import DiscordIcon from 'src/icons/DiscordIcon';
 
 const HeaderLink = ({
@@ -46,26 +46,26 @@ const HeaderLink = ({
 const HeaderLinks = () => {
   return (
     <div className="flex-1 justify-center hidden md:!flex text-sm h-full">
-      <HeaderLink href="/" isActive title={'Terminal'} icon={<SwapIcon width="20" height="20" />} />
+      <HeaderLink href="/" isActive title={'Demo'} icon={<SwapIcon width="20" height="20" />} />
       <HeaderLink
         href="#"
         isActive={false}
         external
-        title={'Link 1'}
-        icon={<RedoLogo width="20" height="20" />}
+        title={'Repo'}
+        icon={<RepoLogo width="20" height="20" />}
       />
       <HeaderLink
         href="#"
         isActive={false}
         external
-        title={'Link 2'}
-        icon={<RedoLogo width="20" height="20" />}
+        title={'Docs'}
+        icon={<RepoLogo width="20" height="20" />}
       />
       <HeaderLink
         href="#"
         isActive={false}
         external
-        title={'Link 3'}
+        title={'Discord'}
         icon={<DiscordIcon width="20" height="20" />}
       />
     </div>
