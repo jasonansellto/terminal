@@ -69,7 +69,7 @@ export default function App({ Component, pageProps }: AppProps) {
               env: 'mainnet-beta',
               autoConnect: true,
               metadata: {
-                name: 'Solana Widgets',
+                name: 'Solana Terminal',
                 description: '',
                 url: 'https://terminal-pearl.vercel.app/',
                 iconUrls: [''],
@@ -181,7 +181,7 @@ export default function App({ Component, pageProps }: AppProps) {
                         )}
                       >
                         <div className="flex items-center text-md text-white">
-                          {tab === 'integrated' ? <V2SexyChameleonText>Solana Swap</V2SexyChameleonText> : 'Integrated'}
+                          {tab === 'integrated' ? <V2SexyChameleonText>Integrated</V2SexyChameleonText> : 'Integrated'}
                         </div>
                         {tab === 'integrated' ? (
                           <div className="absolute left-0 bottom-[-8px] w-full h-0.5 bg-gradient-to-r from-v3-primary to-[#00BEF0]" />
@@ -201,7 +201,7 @@ export default function App({ Component, pageProps }: AppProps) {
                         )}
                       >
                         <div className="flex items-center text-md text-white">
-                          {tab === 'widget' ? <V2SexyChameleonText>Trading Bot</V2SexyChameleonText> : 'Widget'}
+                          {tab === 'widget' ? <V2SexyChameleonText>Widget</V2SexyChameleonText> : 'Widget'}
                         </div>
 
                         {tab === 'widget' ? (
@@ -213,10 +213,10 @@ export default function App({ Component, pageProps }: AppProps) {
                     </div>
 
                     <span className="flex justify-center text-center text-xs text-[#9D9DA6] mt-4">
-                      {tab === 'modal' ? 'Jupiter renders as a modal and takes up the whole screen.' : null}
-                      {tab === 'integrated' ? 'Jupiter renders as a part of your dApp.' : null}
+                      {tab === 'modal' ? 'Renders as a modal and takes up the whole screen.' : null}
+                      {tab === 'integrated' ? 'Renders as a part of your dApp.' : null}
                       {tab === 'widget'
-                        ? 'Jupiter renders as part of a widget that can be placed at different positions on your dApp.'
+                        ? 'Renders as part of a widget that can be placed at different positions on your dApp.'
                         : null}
                     </span>
 
