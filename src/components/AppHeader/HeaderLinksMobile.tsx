@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import DiscordIcon from 'src/icons/TwitterIcon';
-import RepoLogo from 'src/icons/JupiterLogo';
+import TwitterIcon from 'src/icons/TwitterIcon';
+import JupiterLogo from 'src/icons/JupiterLogo';
 import SwapIcon from 'src/icons/SwapIcon';
 
 const HeaderLink: React.FC<{
