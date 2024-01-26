@@ -151,16 +151,16 @@ export default function App({ Component, pageProps }: AppProps) {
                     <div className="mt-4 flex justify-center ">
                       <button
                         onClick={() => {
-                          setTab('Pop-up');
+                          setTab('modal');
                         }}
                         type="button"
                         className={classNames(
                           '!bg-none relative px-4 justify-center',
-                          tab === 'Pop-up' ? '' : 'opacity-20 hover:opacity-70',
+                          tab === 'modal' ? '' : 'opacity-20 hover:opacity-70',
                         )}
                       >
                         <div className="flex items-center text-md text-white">
-                          {tab === 'Pop-up' ? <V2SexyChameleonText>Pop-up</V2SexyChameleonText> : 'Pop-up'}
+                          {tab === 'modal' ? <V2SexyChameleonText>Pop-up</V2SexyChameleonText> : 'Pop-up'}
                         </div>
 
                         {tab === 'modal' ? (
