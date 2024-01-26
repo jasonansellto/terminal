@@ -117,7 +117,7 @@ export default function App({ Component, pageProps }: AppProps) {
               <div className="flex flex-col justify-center items-center text-center">
                 <div className="flex space-x-2">
                   <V2SexyChameleonText className="text-4xl md:text-[52px] font-semibold px-4 pb-2 md:px-0">
-                    Jupiter Terminal
+                    VIP Exchange
                   </V2SexyChameleonText>
 
                   <div className="px-1 py-0.5 bg-v3-primary rounded-md ml-2.5 font-semibold flex text-xs self-start">
@@ -125,8 +125,7 @@ export default function App({ Component, pageProps }: AppProps) {
                   </div>
                 </div>
                 <p className="text-[#9D9DA6] max-w-[100%] md:max-w-[60%] text-md mt-4 heading-[24px]">
-                  An open-sourced, lite version of Jupiter that provides end-to-end swap flow by linking it in your
-                  HTML. Check out the visual demo for the various integration modes below.
+                  Powering the evolution of DeFi on the Blockchain. Trade. Swap or Trade quickly and cheaply.
                 </p>
               </div>
 
