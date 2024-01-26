@@ -25,8 +25,8 @@ const CodeBlocks = ({
   displayMode: IInit['displayMode'];
 }) => {
   const DISPLAY_MODE_VALUES = (() => {
-    if (displayMode === 'multichain') return {};
-    if (displayMode === 'solana') return { displayMode: 'integrated', integratedTargetId: 'integrated-terminal' };
+    if (displayMode === 'modal') return {};
+    if (displayMode === 'integrated') return { displayMode: 'integrated', integratedTargetId: 'integrated-terminal' };
     if (displayMode === 'widget') return { displayMode: 'widget' };
   })();
 
