@@ -175,19 +175,19 @@ const CodeBlocks = ({
           <Link
             target="_blank"
             rel={'noopener noreferrer'}
-            href={'https://github.com/jup-ag/terminal/tree/main/src/content'}
+            href={'#'}
             className="mt-2 flex items-center justify-center space-x-1 text-sm text-white/50 hover:underline"
           >
-            <p>Open Example directory</p>
+            <p>Powered by Solana</p>
             <ExternalIcon />
           </Link>
           <Link
             target="_blank"
             rel={'noopener noreferrer'}
-            href={'https://github.com/jup-ag/terminal/blob/main/src/types/index.d.ts'}
+            href={'#'}
             className="mt-2 flex items-center justify-center space-x-1 text-sm text-white/50 hover:underline"
           >
-            <p>Show fully typed API</p>
+            <p>Get Expert Help</p>
             <ExternalIcon />
           </Link>
         </div>
